@@ -1,0 +1,6 @@
+name: capi-provider-talos
+title: capi-provider-talos
+version: master
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/partials/nav.adoc

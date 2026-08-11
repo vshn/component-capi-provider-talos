@@ -1,0 +1,14 @@
+local kap = import 'lib/kapitan.libjsonnet';
+local inv = kap.inventory();
+local params = inv.parameters.capi_provider_talos;
+local argocd = import 'lib/argocd.libjsonnet';
+
+local app = argocd.App('capi-provider-talos', params.namespace);
+
+local appPath =
+  local project = std.get(std.get(app, 'spec', {}), 'project', 'syn');
+  if project == 'syn' then 'apps' else 'apps-%s' % project;
+
+{
+  ['%s/capi-provider-talos' % appPath]: app,
+}

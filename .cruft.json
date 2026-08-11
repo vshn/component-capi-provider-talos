@@ -1,0 +1,32 @@
+{
+  "template": "https://github.com/projectsyn/commodore-component-template.git",
+  "commit": "aec8da7344f670fff4f96fb20cbdcfbdeb2113d4",
+  "checkout": "main",
+  "context": {
+    "cookiecutter": {
+      "name": "capi-provider-talos",
+      "slug": "capi-provider-talos",
+      "parameter_key": "capi_provider_talos",
+      "test_cases": "defaults",
+      "add_lib": "n",
+      "add_pp": "n",
+      "add_golden": "y",
+      "add_matrix": "y",
+      "add_go_unit": "n",
+      "automerge_patch": "y",
+      "automerge_patch_v0": "n",
+      "automerge_patch_regexp_blocklist": "",
+      "automerge_patch_v0_regexp_allowlist": "",
+      "automerge_minor_regexp_allowlist": "",
+      "auto_release": "y",
+      "copyright_holder": "VSHN AG <info@vshn.ch>",
+      "copyright_year": "2026",
+      "github_owner": "vshn",
+      "github_name": "component-capi-provider-talos",
+      "github_url": "https://github.com/vshn/component-capi-provider-talos",
+      "_template": "https://github.com/projectsyn/commodore-component-template.git",
+      "_commit": "aec8da7344f670fff4f96fb20cbdcfbdeb2113d4"
+    }
+  },
+  "directory": null
+}

@@ -1,0 +1,5 @@
+= capi-provider-talos
+
+capi-provider-talos is a Commodore component to manage capi-provider-talos.
+
+See the xref:references/parameters.adoc[parameters] reference for further details.
