@@ -6,8 +6,10 @@ local inv = kap.inventory();
 // The hiera parameters for the component
 local params = inv.parameters.capi_provider_talos;
 
+local manifest_path = 'config/default';
+
 com.Kustomization(
-  'https://github.com/siderolabs/cluster-api-control-plane-provider-talos/' + params.controlplane.kustomize.manifest_path,
+  'https://github.com/siderolabs/cluster-api-control-plane-provider-talos/' + manifest_path,
   params.images['capi-controlplane-provider-talos'].tag,
   {
     'ghcr.io/siderolabs/cluster-api-control-plane-talos-controller': {

@@ -16,9 +16,6 @@ parameters:
         tag: v0.5.13
 
     bootstrap:
-      kustomize:
-        # The root path of the kustomize manifests. This path is relative to the root of the repository.
-        manifest_path: config/default
 
       # An object with variables that the generated manifests will be templated with.
       # They should be specified in the format:
@@ -27,9 +24,6 @@ parameters:
       variables: {}
 
     controlplane:
-      kustomize:
-        # The root path of the kustomize manifests. This path is relative to the root of the repository.
-        manifest_path: config/default
 
       # An object with variables that the generated manifests will be templated with.
       # They should be specified in the format:

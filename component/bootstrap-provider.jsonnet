@@ -6,8 +6,10 @@ local inv = kap.inventory();
 // The hiera parameters for the component
 local params = inv.parameters.capi_provider_talos;
 
+local manifest_path = 'config/default';
+
 com.Kustomization(
-  'https://github.com/siderolabs/cluster-api-bootstrap-provider-talos/' + params.bootstrap.kustomize.manifest_path,
+  'https://github.com/siderolabs/cluster-api-bootstrap-provider-talos/' + manifest_path,
   params.images['capi-bootstrap-provider-talos'].tag,
   {
     'ghcr.io/siderolabs/cluster-api-bootstrap-talos-controller': {
