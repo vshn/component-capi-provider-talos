@@ -47,7 +47,8 @@ parameters:
         input_paths:
           - ${_base_directory}/scripts/envsubst-dir
         # map env vars from parameters as needed
-        env_vars: {}
+        env_vars:
+          ENVSUBST_VERSION: v1.4.3
         args:
           - ${_base_directory}/manifests/capi-controlplane-provider-talos-rendered
           - \${compiled_target_dir}/capi-provider-talos/controlplane/10_kustomize
